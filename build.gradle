@@ -1,0 +1,28 @@
+plugins {
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+
+}
+
+dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    implementation 'org.junit.jupiter:junit-jupiter-engine'
+    implementation 'org.javacord:javacord:3.3.2'
+    // Custom command handler
+    implementation 'com.github.Hopefuls:Javacord-CommandHandler:-SNAPSHOT'
+    // Emoji java
+    implementation 'com.vdurmont:emoji-java:5.1.1'
+    // https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp
+    implementation group: 'com.squareup.okhttp3', name: 'okhttp', version: '5.0.0-alpha.2'
+    implementation group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.29'
+    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.34.0'
+
+}
+mainClassName='me.hopedev.AdvancedManager.Main'
